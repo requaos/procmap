@@ -18,7 +18,7 @@
 
           src = ./.;
 
-          vendorHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+          vendorHash = "sha256-8LxD44XZycnB2rLhwuR7EO0VbLGFI4zzjyyttrOsQzA=";
 
           meta = with pkgs.lib; {
             description = "Terminal-based process visualization tool";
