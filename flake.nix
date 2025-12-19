@@ -34,6 +34,7 @@
             gopls
             delve
             go-tools
+            gh
           ];
 
           shellHook = ''
@@ -44,6 +45,7 @@
             echo "  gopls - Language server"
             echo "  delve - Debugger"
             echo "  staticcheck - Linter"
+            echo "  gh - GitHub CLI"
             echo ""
             echo "Quick commands:"
             echo "  go run main.go - Run the app"
