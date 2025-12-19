@@ -14,6 +14,24 @@ A terminal-based process visualization tool written in Go. Displays real-time pr
 
 ## Installation
 
+### With Nix
+
+If you have Nix with flakes enabled:
+
+```bash
+# Run directly
+nix run github:req/procmap
+
+# Install to profile
+nix profile install github:req/procmap
+
+# Build locally
+nix build
+./result/bin/procmap
+```
+
+### Without Nix
+
 ```bash
 go mod download
 go build -o procmap
@@ -51,6 +69,24 @@ The project is organized into three main packages:
 - [gopsutil](https://github.com/shirou/gopsutil) - Cross-platform process/system info
 
 ## Development
+
+### With Nix
+
+Enter the development environment:
+
+```bash
+nix develop
+```
+
+This provides Go 1.23, gopls, delve, and staticcheck. Then use standard Go commands:
+
+```bash
+go run main.go
+go test ./...
+go build -o procmap
+```
+
+### Without Nix
 
 Run with auto-reload during development:
 
