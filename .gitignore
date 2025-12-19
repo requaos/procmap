@@ -27,3 +27,8 @@ vendor/
 
 # Worktrees
 .worktrees/
+
+# Nix
+result
+result-*
+.nix-shell.nu
