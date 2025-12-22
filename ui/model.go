@@ -143,8 +143,8 @@ func (m model) View() string {
 	s += headerStyle.Render(header) + "\n"
 
 	// Bubble visualization
-	bubbles := packBubbles(m.processes, m.sortMode, m.maxBubbles, m.width, m.height-3)
-	bubbleView := renderBubbles(bubbles, m.width, m.height-3, m.sortMode)
+	bubbles := packBubbles(m.processes, m.sortMode, m.maxBubbles, m.width, m.height)
+	bubbleView := renderBubbles(bubbles, m.width, m.height, m.sortMode)
 	s += bubbleView + "\n"
 
 	// Footer
